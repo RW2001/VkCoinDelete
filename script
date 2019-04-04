@@ -1,0 +1,50 @@
+// ==UserScript==
+// @name         lzt coin 1
+// @namespace    lzt coin 2
+// @version      0.1
+// @description  lzt coin 3
+// @author       lzt
+// @match        https://lolzteam.net/*
+// ==/UserScript==
+
+(function() {
+    'use strict';
+
+	setInterval(function(){
+  		$(".discussionListItem--Wrapper").each(function() {
+	    	var text = $(this).text().toLowerCase();
+
+	    	if (text.indexOf("vk coin") !== -1) {
+	    		$(this).remove();
+	    	}
+	    	if (text.indexOf("коины") !== -1) {
+	    		$(this).remove();
+	    	}
+	    	if (text.indexOf("койнов") !== -1) {
+	    		$(this).remove();
+	    	}
+	    	if (text.indexOf("койнов") !== -1) {
+	    		$(this).remove();
+	    	}
+	    	if (text.indexOf("коинов") !== -1) {
+	    		$(this).remove();
+	    	}
+	    	if (text.indexOf("vk pay coins") !== -1) {
+	    		$(this).remove();
+	    	}
+	    	if (text.indexOf("vkcoin") !== -1) {
+	    		$(this).remove();
+	    	}
+	    	if (text.indexOf("vkpaycoins") !== -1) {
+	    		$(this).remove();
+	    	}
+	    	if (text.indexOf("койны") !== -1) {
+	    		$(this).remove();
+	    	}
+	    	if (text.indexOf("coin-в") !== -1) {
+	    		$(this).remove();
+	    	}
+
+		});
+	}, 100);
+})();
